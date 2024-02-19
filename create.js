@@ -11,7 +11,7 @@ button.addEventListener("click", () => {
         email: email,
     };
 
-    fetch('http://localhost/assign/create.php', {
+    fetch('http://localhost/integrative_act/create.php', {
         method: "POST",
         headers: {
             "Content-Type": "application/json; charset=UTF-8",
@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
 });
 
     function fetchAndDisplay() {
-        fetch('http://localhost/assign/display.php')
+        fetch('http://localhost/integrative_act/display.php')
         .then(response => response.json())
         .then(data => {
             let tableBody = document.getElementById('tableBody');
